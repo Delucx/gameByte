@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+* {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  min-height: 100vh;
+  background: #1e1e1e;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  padding: 10px 0;
+  background: #1e1e1e;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+nav section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 100px;
+}
+nav section img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+nav section h3 {
+  color: #44E4E5;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  margin-right: 100px;
+  padding: 0;
+}
+nav li {
+  list-style: none;
+  margin: 0 20px;
+  cursor: pointer;
+}
+nav li a {
+  text-decoration: none;
+  color: #44E4E5;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 700;
+  letter-spacing: 2px;
+  transition: all 0.3s ease-in-out;
+}
+nav li a:hover {
+  color: #C94558;
+  transition: all 0.3s ease-in-out;
+}
+nav li:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+header {
+  padding: 10px 0;
+  background: #1e1e1e;
+}
+header h3 {
+  color: #D9178D;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0 10px;
+  margin-left: 100px;
+  margin-top: 100px;
+  text-shadow: 3px 3px 0px #FFFFFF;
+}
+header p {
+  color: #2CEDEC;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+header button {
+  background: #304579;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.8);
+  color: #44E4E5;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8);
+  width: 250px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+header button:hover {
+  background: #C94558;
+  box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+header img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+header section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 70vh;
+  margin-top: 50px;
+  background-image: url("/Assets/riot_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+header section h1 {
+  color: #ffffff;
+  font-size: 72px;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0 10px;
+  text-shadow: 10px 9px 0px #C94558;
+}
+header .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1100px;
+  margin: 70px;
+  padding: 40px;
+  gap: 40px;
+  text-align: center;
+  border-radius: 4px;
+  background: rgba(14, 14, 14, 0.5);
+}/*# sourceMappingURL=style.css.map */

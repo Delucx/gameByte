@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login | gameByte</title>
     <link rel="icon" type="image/x-icon" href="Assets/gameByte_icon.png">
-    <link rel="stylesheet" href="./Animate.css">
+    <link rel="stylesheet" href="CSS/Animate.css">
 </head>
 <body>
     <section>
