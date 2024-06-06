@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap");
 * {
   font-family: "Press Start 2P", system-ui;
   font-weight: 400;
@@ -52,6 +53,7 @@ nav li {
   list-style: none;
   margin: 0 20px;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 nav li a {
   text-decoration: none;
@@ -66,7 +68,7 @@ nav li a:hover {
   transition: all 0.3s ease-in-out;
 }
 nav li:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   transition: all 0.3s ease-in-out;
 }
 
@@ -157,4 +159,136 @@ header .container {
   text-align: center;
   border-radius: 4px;
   background: rgba(14, 14, 14, 0.5);
+}
+
+.gameWeekContainer section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 40px;
+  gap: 40px;
+  text-align: center;
+}
+.gameWeekContainer section h4 {
+  color: #ffffff;
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0 10px;
+  text-shadow: 4px -1px 0px #44E4E5, 3px 6px 0px #D9178D;
+}
+.gameWeekContainer section h4 p {
+  color: #ffffff;
+  font-size: 32px;
+  letter-spacing: 0px;
+  margin: 0 10px;
+  text-shadow: 3px -0.5px 0px #44E4E5, 2px 3px 0px #D9178D;
+}
+.gameWeekContainer section .gameWeekImg {
+  display: flex;
+  gap: 50px;
+}
+.gameWeekContainer section .gameWeekImg .ticTacToe {
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.gameWeekContainer section .gameWeekImg .ticTacToe img {
+  width: 200px;
+  height: 200px;
+  border: 5px solid #936464;
+  box-shadow: 0px 0px 40px 5px #936464;
+  transition: all 0.3s ease-in-out;
+}
+.gameWeekContainer section .gameWeekImg .ticTacToe img:hover {
+  box-shadow: 0px 0px 10px 5px #936464;
+  transform: scale(0.9);
+  transition: all 0.3s ease-in-out;
+}
+.gameWeekContainer section .gameWeekImg .ticTacToe h6 {
+  text-align: left;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0px;
+  margin: 0 10px;
+  margin-top: 20px;
+}
+.gameWeekContainer section .gameWeekImg .ticTacToe p {
+  font-family: "Kosugi Maru", sans-serif;
+  text-align: left;
+  color: #ffffff;
+  font-size: 12px;
+  letter-spacing: 0px;
+  margin: 0 10px;
+  margin-top: 10px;
+}
+.gameWeekContainer section .gameWeekImg .valorant {
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.gameWeekContainer section .gameWeekImg .valorant img {
+  width: 200px;
+  height: 200px;
+  border: 5px solid #FF4654;
+  box-shadow: 0px 0px 40px 5px #FF4654;
+  transition: all 0.3s ease-in-out;
+}
+.gameWeekContainer section .gameWeekImg .valorant img:hover {
+  box-shadow: 0px 0px 10px 5px #FF4654;
+  transform: scale(0.9);
+  transition: all 0.3s ease-in-out;
+}
+.gameWeekContainer section .gameWeekImg .valorant h6 {
+  text-align: left;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0px;
+  margin: 0 10px;
+  margin-top: 20px;
+}
+.gameWeekContainer section .gameWeekImg .valorant p {
+  font-family: "Kosugi Maru", sans-serif;
+  text-align: left;
+  color: #ffffff;
+  font-size: 12px;
+  letter-spacing: 0px;
+  margin: 0 10px;
+  margin-top: 10px;
+}
+.gameWeekContainer section .gameWeekImg .stardewValley {
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.gameWeekContainer section .gameWeekImg .stardewValley img {
+  width: 200px;
+  height: 200px;
+  border: 5px solid #1A7BC7;
+  box-shadow: 0px 0px 40px 5px #1A7BC7;
+  transition: all 0.3s ease-in-out;
+}
+.gameWeekContainer section .gameWeekImg .stardewValley img:hover {
+  box-shadow: 0px 0px 10px 5px #1A7BC7;
+  transform: scale(0.9);
+  transition: all 0.3s ease-in-out;
+}
+.gameWeekContainer section .gameWeekImg .stardewValley h6 {
+  text-align: left;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0px;
+  margin: 0 10px;
+  margin-top: 20px;
+}
+.gameWeekContainer section .gameWeekImg .stardewValley p {
+  font-family: "Kosugi Maru", sans-serif;
+  text-align: left;
+  color: #ffffff;
+  font-size: 12px;
+  letter-spacing: 0px;
+  margin: 0 10px;
+  margin-top: 10px;
 }/*# sourceMappingURL=style.css.map */
