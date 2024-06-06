@@ -291,4 +291,211 @@ header .container {
   letter-spacing: 0px;
   margin: 0 10px;
   margin-top: 10px;
+}
+
+.communitiesContainer h3 {
+  color: #D9178D;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0 10px;
+  margin-left: 100px;
+  margin-top: 100px;
+  text-shadow: 3px 3px 0px #FFFFFF;
+}
+.communitiesContainer section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  width: 100%;
+}
+.communitiesContainer section .sectionrow1 .text-block {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.communitiesContainer section .sectionrow1 .text-block h6 {
+  font-family: "Press Start 2P", system-ui;
+  text-align: left;
+  color: #ffffff;
+  font-size: 28px;
+  letter-spacing: 0px;
+  margin: 0 10px;
+}
+.communitiesContainer section .sectionrow1 .text-block p {
+  font-family: "Kosugi Maru", sans-serif;
+  text-align: left;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0px;
+  margin: 0 10px;
+}
+.communitiesContainer section .sectionrow1 .game {
+  display: flex;
+  position: relative;
+  width: 600px;
+  height: 200px;
+  margin: 60px 30px;
+  border: 2px solid #471F9A;
+  box-shadow: 0px 0px 20px 10px #000000;
+  transition: all 0.3s ease-in-out;
+}
+.communitiesContainer section .sectionrow1 .game img {
+  width: 600px;
+  height: 200px;
+}
+.communitiesContainer section .sectionrow2 .text-block {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.communitiesContainer section .sectionrow2 .text-block h6 {
+  font-family: "Press Start 2P", system-ui;
+  text-align: left;
+  color: #ffffff;
+  font-size: 28px;
+  letter-spacing: 0px;
+  margin: 0 10px;
+}
+.communitiesContainer section .sectionrow2 .text-block p {
+  font-family: "Kosugi Maru", sans-serif;
+  text-align: left;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0px;
+  margin: 0 10px;
+}
+.communitiesContainer section .sectionrow2 .game {
+  display: flex;
+  position: relative;
+  width: 600px;
+  height: 200px;
+  margin: 60px 30px;
+  border: 2px solid #471F9A;
+  box-shadow: 0px 0px 20px 10px #000000;
+  transition: all 0.3s ease-in-out;
+}
+.communitiesContainer section .sectionrow2 .game img {
+  width: 600px;
+  height: 200px;
+}
+
+.newReleaseContainer h3 {
+  color: #D9178D;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0 10px;
+  margin-left: 100px;
+  margin-top: 100px;
+  text-shadow: 3px 3px 0px #FFFFFF;
+}
+.newReleaseContainer section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 40px;
+  width: 100%;
+}
+.newReleaseContainer section .text-block h6 {
+  text-align: left;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0px;
+  margin: 0 10px;
+  margin-top: 20px;
+}
+.newReleaseContainer section .text-block .genre {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+}
+.newReleaseContainer section .text-block p {
+  font-family: "Kosugi Maru", sans-serif;
+  text-align: left;
+  color: #ffffff;
+  font-size: 10px;
+  letter-spacing: 0px;
+  padding: 0 10px;
+  margin: 0 2px;
+  margin-top: 10px;
+  border: 1px solid #ffffff;
+}
+.newReleaseContainer section .tictactoe {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.newReleaseContainer section .tictactoe img {
+  width: 200px;
+  height: 200px;
+  margin-right: 10px;
+  border: 5px solid #936464;
+  box-shadow: 0px 0px 40px 5px #936464;
+  transition: all 0.3s ease-in-out;
+}
+.newReleaseContainer section .tictactoe img:hover {
+  box-shadow: 0px 0px 10px 5px #936464;
+  transform: scale(0.9);
+  transition: all 0.3s ease-in-out;
+}
+.newReleaseContainer section .palworld {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.newReleaseContainer section .palworld img {
+  width: 200px;
+  height: 200px;
+  margin-right: 10px;
+  border: 5px solid #10BDBE;
+  box-shadow: 0px 0px 40px 5px #10BDBE;
+  transition: all 0.3s ease-in-out;
+}
+.newReleaseContainer section .palworld img:hover {
+  box-shadow: 0px 0px 10px 5px #10BDBE;
+  transform: scale(0.9);
+  transition: all 0.3s ease-in-out;
+}
+.newReleaseContainer section .sololeveling {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.newReleaseContainer section .sololeveling img {
+  width: 200px;
+  height: 200px;
+  margin-right: 10px;
+  border: 5px solid #FDD93B;
+  box-shadow: 0px 0px 40px 5px #FDD93B;
+  transition: all 0.3s ease-in-out;
+}
+.newReleaseContainer section .sololeveling img:hover {
+  box-shadow: 0px 0px 10px 5px #FDD93B;
+  transform: scale(0.9);
+  transition: all 0.3s ease-in-out;
+}
+.newReleaseContainer section .lethalcompany {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.newReleaseContainer section .lethalcompany img {
+  width: 200px;
+  height: 200px;
+  margin-right: 10px;
+  border: 5px solid #C94558;
+  box-shadow: 0px 0px 40px 5px #C94558;
+  transition: all 0.3s ease-in-out;
+}
+.newReleaseContainer section .lethalcompany img:hover {
+  box-shadow: 0px 0px 10px 5px #C94558;
+  transform: scale(0.9);
+  transition: all 0.3s ease-in-out;
 }/*# sourceMappingURL=style.css.map */
