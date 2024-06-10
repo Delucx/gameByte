@@ -311,81 +311,73 @@ header .container {
   padding: 40px;
   width: 100%;
 }
-.communitiesContainer section .sectionrow1 .text-block {
+.communitiesContainer .sectionrow1 .text-block, .communitiesContainer .sectionrow2 .text-block {
   position: absolute;
   bottom: 10px;
   left: 10px;
   color: white;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 10px;
+  transition: all 1s ease-in-out;
+  width: auto;
+  box-sizing: border-box;
 }
-.communitiesContainer section .sectionrow1 .text-block h6 {
+.communitiesContainer .sectionrow1 .text-block h6, .communitiesContainer .sectionrow2 .text-block h6 {
   font-family: "Press Start 2P", system-ui;
   text-align: left;
   color: #ffffff;
   font-size: 28px;
   letter-spacing: 0px;
-  margin: 0 10px;
+  margin: 0;
+  transition: all 0.5s ease-in-out;
 }
-.communitiesContainer section .sectionrow1 .text-block p {
+.communitiesContainer .sectionrow1 .text-block p, .communitiesContainer .sectionrow2 .text-block p {
   font-family: "Kosugi Maru", sans-serif;
   text-align: left;
   color: #ffffff;
   font-size: 16px;
   letter-spacing: 0px;
-  margin: 0 10px;
+  margin: 0;
+  transition: all 3s ease-in-out;
 }
-.communitiesContainer section .sectionrow1 .game {
+.communitiesContainer .sectionrow1 .game, .communitiesContainer .sectionrow2 .game {
   display: flex;
   position: relative;
   width: 600px;
   height: 200px;
   margin: 60px 30px;
-  border: 2px solid #471F9A;
-  box-shadow: 0px 0px 20px 10px #000000;
-  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
-.communitiesContainer section .sectionrow1 .game img {
+.communitiesContainer .sectionrow1 .game img, .communitiesContainer .sectionrow2 .game img {
   width: 600px;
   height: 200px;
+  border: 2px solid #471F9A;
+  box-shadow: 0px 0px 20px 10px #000000;
+  filter: brightness(50%);
+  transition: all 0.5s ease-in-out;
 }
-.communitiesContainer section .sectionrow2 .text-block {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  color: white;
-  padding-left: 10px;
-  padding-right: 10px;
+.communitiesContainer .sectionrow1 .game:hover img, .communitiesContainer .sectionrow2 .game:hover img {
+  filter: brightness(30%);
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
 }
-.communitiesContainer section .sectionrow2 .text-block h6 {
-  font-family: "Press Start 2P", system-ui;
-  text-align: left;
-  color: #ffffff;
+.communitiesContainer .sectionrow1 .game:hover .text-block, .communitiesContainer .sectionrow2 .game:hover .text-block {
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  padding: 10px;
+  transition: all 1s ease-in-out;
+  width: auto;
+}
+.communitiesContainer .sectionrow1 .game:hover .text-block h6, .communitiesContainer .sectionrow2 .game:hover .text-block h6 {
   font-size: 28px;
-  letter-spacing: 0px;
-  margin: 0 10px;
+  text-align: center;
+  margin: 0;
+  transition: all 0.5s ease-in-out;
 }
-.communitiesContainer section .sectionrow2 .text-block p {
-  font-family: "Kosugi Maru", sans-serif;
-  text-align: left;
-  color: #ffffff;
-  font-size: 16px;
-  letter-spacing: 0px;
-  margin: 0 10px;
-}
-.communitiesContainer section .sectionrow2 .game {
-  display: flex;
-  position: relative;
-  width: 600px;
-  height: 200px;
-  margin: 60px 30px;
-  border: 2px solid #471F9A;
-  box-shadow: 0px 0px 20px 10px #000000;
+.communitiesContainer .sectionrow1 .game:hover .text-block p, .communitiesContainer .sectionrow2 .game:hover .text-block p {
+  font-size: 0;
+  opacity: 0;
   transition: all 0.3s ease-in-out;
-}
-.communitiesContainer section .sectionrow2 .game img {
-  width: 600px;
-  height: 200px;
 }
 
 .newReleaseContainer h3 {
@@ -427,15 +419,28 @@ header .container {
   font-size: 10px;
   letter-spacing: 0px;
   padding: 0 10px;
-  margin: 0 2px;
-  margin-top: 10px;
+  margin: 10px 2px 0;
   border: 1px solid #ffffff;
+  background: linear-gradient(90deg, #C94558 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  transition: all 0.3s ease-in-out;
 }
-.newReleaseContainer section .tictactoe {
+.newReleaseContainer section .text-block p:hover {
+  background-position: 0 0;
+  transition: all 0.3s ease-in-out;
+}
+.newReleaseContainer section .tictactoe,
+.newReleaseContainer section .palworld,
+.newReleaseContainer section .sololeveling,
+.newReleaseContainer section .lethalcompany {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-.newReleaseContainer section .tictactoe img {
+.newReleaseContainer section .tictactoe img,
+.newReleaseContainer section .palworld img,
+.newReleaseContainer section .sololeveling img,
+.newReleaseContainer section .lethalcompany img {
   width: 200px;
   height: 200px;
   margin-right: 10px;
@@ -443,59 +448,43 @@ header .container {
   box-shadow: 0px 0px 40px 5px #936464;
   transition: all 0.3s ease-in-out;
 }
-.newReleaseContainer section .tictactoe img:hover {
+.newReleaseContainer section .tictactoe img:hover,
+.newReleaseContainer section .palworld img:hover,
+.newReleaseContainer section .sololeveling img:hover,
+.newReleaseContainer section .lethalcompany img:hover {
   box-shadow: 0px 0px 10px 5px #936464;
   transform: scale(0.9);
   transition: all 0.3s ease-in-out;
 }
-.newReleaseContainer section .palworld {
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
 .newReleaseContainer section .palworld img {
-  width: 200px;
-  height: 200px;
-  margin-right: 10px;
-  border: 5px solid #10BDBE;
+  border-color: #10BDBE;
   box-shadow: 0px 0px 40px 5px #10BDBE;
-  transition: all 0.3s ease-in-out;
 }
 .newReleaseContainer section .palworld img:hover {
   box-shadow: 0px 0px 10px 5px #10BDBE;
-  transform: scale(0.9);
-  transition: all 0.3s ease-in-out;
-}
-.newReleaseContainer section .sololeveling {
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
 }
 .newReleaseContainer section .sololeveling img {
-  width: 200px;
-  height: 200px;
-  margin-right: 10px;
-  border: 5px solid #FDD93B;
+  border-color: #FDD93B;
   box-shadow: 0px 0px 40px 5px #FDD93B;
-  transition: all 0.3s ease-in-out;
 }
 .newReleaseContainer section .sololeveling img:hover {
   box-shadow: 0px 0px 10px 5px #FDD93B;
-  transform: scale(0.9);
-  transition: all 0.3s ease-in-out;
-}
-.newReleaseContainer section .lethalcompany {
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
 }
 .newReleaseContainer section .lethalcompany img {
-  width: 200px;
-  height: 200px;
-  margin-right: 10px;
-  border: 5px solid #C94558;
+  border-color: #C94558;
   box-shadow: 0px 0px 40px 5px #C94558;
-  transition: all 0.3s ease-in-out;
 }
 .newReleaseContainer section .lethalcompany img:hover {
   box-shadow: 0px 0px 10px 5px #C94558;
-  transform: scale(0.9);
-  transition: all 0.3s ease-in-out;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Press Start 2P", system-ui;
+  font-size: 10px;
+  color: #FFFFFF;
+  padding: 40px;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
