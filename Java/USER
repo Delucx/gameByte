@@ -1,0 +1,9 @@
+
+CREATE TABLE gamebyte_user (
+    id INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1),
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    contact_number BIGINT NOT NULL,
+    username VARCHAR(50) NOT NULL
+);
