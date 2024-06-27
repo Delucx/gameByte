@@ -111,6 +111,7 @@ header
         font-family: "Kosugi Maru", sans-serif
         text-align: left
         color: #ffffff
+        cursor: pointer
         font-size: 14px
         letter-spacing: 0px
         padding: 4px 12px
@@ -119,7 +120,11 @@ header
         background: linear-gradient(90deg, #C94558 50%, transparent 50%)
         background-size: 200% 100%
         background-position: 100% 0
-        transition: all 0.3s ease-in-out 
+        transition: all 0.3s ease-in-out
+
+        &:hover
+            background-position: 0 0
+            transition: all 0.3s ease-in-out
     
         
     section
@@ -147,8 +152,294 @@ header
             margin: 0 10px
             margin-top: 5px
 
-.lightShade
-    bottom: -20vh
-    width: 100%
-    box-sizing: border-box
-    box-shadow: 0 2px 20px 0 #F1E9EA
+.contentContainer
+    display: flex
+    justify-content: space-evenly
+    align-items: flex-start
+    margin-top: 30vh
+
+    .leftSide
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        align-self: flex-start
+        width: 40%
+        height: 100%
+        padding: 40px
+
+        .title
+            h4
+                color: #ffffff
+                font-size: 24px
+                font-family: "Kosugi Maru", sans-serif
+                font-weight: 700    
+                letter-spacing: 1px
+                margin: 20px
+
+        section
+            p
+                color: #ffffff
+                font-size: 14px
+                font-family: "Kosugi Maru", sans-serif
+                font-weight: 400    
+                letter-spacing: 1px
+                line-height: 1.5
+                margin: 10px 10px
+
+        .infoGame
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: flex-start
+            width: 70%
+            height: 100%
+            padding: 20px
+            margin: 20px
+            background: #313131
+            border: 3px solid #0E0E0E
+            box-shadow: 0 0 10px 10px inset #00000081
+
+        .systemRequirements
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: flex-start
+            width: 70%
+            height: 100%
+            padding: 20px
+            margin: 20px
+            background: #313131
+            border: 3px solid #0E0E0E
+            box-shadow: 0 0 10px 10px inset #00000081
+
+    .rightSide
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        align-self: flex-start
+        width: 60%
+        height: 100%
+        padding: 40px
+
+        .profileImg
+            display: flex
+            justify-content: center
+            align-items: flex-start
+            width: 20%
+            height: 100%
+
+            img
+                width: 50px
+                height: 50px
+                margin: 10px
+
+        .commentReview
+            display: flex
+            justify-content: center
+            align-items: flex-start
+            width: 70%
+            height: 100%
+            padding: 20px
+            margin: 20px
+            background: #313131
+            border: 3px solid #858585
+            box-shadow: 20px 20px 10px #00000081
+
+        form
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: flex-start
+            width: 70%
+            height: 100%
+            padding: 20px
+
+            h6
+                color: #ffffff
+                font-size: 24px
+                font-family: "Kosugi Maru", sans-serif
+                font-weight: 700    
+                letter-spacing: 0px
+                margin: 0 10px
+
+            p
+                color: #ffffff
+                font-size: 14px
+                font-family: "Kosugi Maru", sans-serif
+                font-weight: 400    
+                letter-spacing: 0px
+                line-height: 1
+                margin: 10px 10px
+
+            .inputBox
+                width: 400px
+                height: auto
+                box-sizing: border-box
+                overflow: hidden
+                position: relative
+
+                textarea
+                    color: #ffffff
+                    width: 70%
+                    height: 100%
+                    max-width: 100%
+                    max-height: 100%
+                    box-sizing: border-box
+                    overflow: auto
+                    font-family: "Kosugi Maru", sans-serif
+                    font-weight: 700    
+                    letter-spacing: 1px
+                    padding: 20px
+                    background: #313131
+                    border: 3px solid #0E0E0E
+                    box-shadow: 0 0 10px 5px inset #00000081
+
+            .recommendCont
+                display: flex
+
+                p
+                    color: #ffffff
+                    font-size: 14px
+                    font-family: "Kosugi Maru", sans-serif
+                    font-weight: 400    
+                    letter-spacing: 1px
+                    line-height: 1.5
+                    margin: 10px 10px
+
+                .radio
+                    display: flex
+                    justify-content: center
+                    align-items: center
+
+                    input
+                        display: none
+
+                    input:checked + label.thumbsUp
+                        .colorUp
+                            fill: #00FF0A
+                            stroke: none
+
+                    input:checked + label.thumbsDown
+                        .colorDown
+                            fill: #FF0000
+                            stroke: none
+
+                    label
+                        cursor: pointer
+
+                        svg
+                            display: flex
+                            justify-content: center
+                            margin: 5px
+                            width: 25px
+                            height: 30px
+
+                        .colorUp
+                            fill: none
+                            stroke: #00FF0A
+                            filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.5))
+
+
+                        .colorDown
+                            fill: none
+                            stroke: #FF0000
+                            filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.5))
+
+            .submitBtn
+                display: flex
+                justify-content: end
+                width: 100%
+                margin-top: 20px
+
+                button
+                    color: #ffffff
+                    font-size: 10px
+                    font-family: "Press Start 2P", system-ui
+                    font-weight: 400
+                    letter-spacing: 1px
+                    padding: 10px
+                    background: #313131
+                    border-radius: 10px
+                    border: 2px solid #0E0E0E
+                    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.75)
+                    text-shadow: 10px 10px 10px rgb(0, 0, 0, 1)
+                    cursor: pointer
+                    transition: all 0.3s ease-in-out
+
+                button:hover
+                    background: #C94558
+                    box-shadow: 0px 15px 10px rgb(0, 0, 0, 0.5)
+                    text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.8)
+                    transition: all 0.3s ease-in-out
+                    transform: scale(1.1)
+
+        .postedReview
+            display: flex
+            justify-content: center
+            flex-direction: column
+            margin-top: 40px
+
+            h4
+                color: #44E4E5
+                font-size: 24px
+                font-family: "Press Start 2P", system-ui
+                font-weight: 400    
+                letter-spacing: 0px
+                margin-top: 20px
+
+            h6
+                color: #ffffff
+                font-size: 20px
+                font-family: "Kosugi Maru", sans-serif
+                font-weight: 700    
+                letter-spacing: 0px
+                line-height: 1.5
+                margin: 0 10px
+
+            p
+                color: #ffffff
+                font-size: 14px
+                font-family: "Kosugi Maru", sans-serif
+                font-weight: 400    
+                letter-spacing: 0px
+                line-height: 1
+                margin: 10px 10px
+                padding: 30px
+                background: rgba(0, 0, 0, 0.25)
+                border: 3px solid #0E0E0E
+                box-shadow: 0 0 10px 5px inset rgba(0, 0, 0, 0.5)
+
+            section
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: flex-start
+
+                .commentPost
+                    display: flex
+                    justify-content: center
+                    align-items: flex-start
+                    padding: 20px
+                    margin: 20px
+                    border: 2px solid #858585
+                    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5)
+
+                    .recommendProfile
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        flex-direction: column
+                        width: 20%
+
+                        img
+                            width: 50px
+                            margin: 10px
+
+                    .userComment
+                        display: flex
+                        justify-content: center
+                        align-items: flex-start
+                        flex-direction: column
+                        width: 80%

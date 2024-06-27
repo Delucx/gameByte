@@ -114,6 +114,7 @@ header p {
   font-family: "Kosugi Maru", sans-serif;
   text-align: left;
   color: #ffffff;
+  cursor: pointer;
   font-size: 14px;
   letter-spacing: 0px;
   padding: 4px 12px;
@@ -122,6 +123,10 @@ header p {
   background: linear-gradient(90deg, #C94558 50%, transparent 50%);
   background-size: 200% 100%;
   background-position: 100% 0;
+  transition: all 0.3s ease-in-out;
+}
+header p:hover {
+  background-position: 0 0;
   transition: all 0.3s ease-in-out;
 }
 header section {
@@ -150,9 +155,290 @@ header section h4 {
   margin-top: 5px;
 }
 
-.lightShade {
-  bottom: -20vh;
-  width: 1000000px;
+.contentContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-top: 30vh;
+}
+.contentContainer .leftSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-start;
+  width: 40%;
+  height: 100%;
+  padding: 40px;
+}
+.contentContainer .leftSide .title h4 {
+  color: #ffffff;
+  font-size: 24px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 20px;
+}
+.contentContainer .leftSide section p {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  margin: 10px 10px;
+}
+.contentContainer .leftSide .infoGame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 70%;
+  height: 100%;
+  padding: 20px;
+  margin: 20px;
+  background: #313131;
+  border: 3px solid #0E0E0E;
+  box-shadow: 0 0 10px 10px inset rgba(0, 0, 0, 0.5058823529);
+}
+.contentContainer .leftSide .systemRequirements {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 70%;
+  height: 100%;
+  padding: 20px;
+  margin: 20px;
+  background: #313131;
+  border: 3px solid #0E0E0E;
+  box-shadow: 0 0 10px 10px inset rgba(0, 0, 0, 0.5058823529);
+}
+.contentContainer .rightSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-start;
+  width: 60%;
+  height: 100%;
+  padding: 40px;
+}
+.contentContainer .rightSide .profileImg {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 20%;
+  height: 100%;
+}
+.contentContainer .rightSide .profileImg img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+.contentContainer .rightSide .commentReview {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 70%;
+  height: 100%;
+  padding: 20px;
+  margin: 20px;
+  background: #313131;
+  border: 3px solid #858585;
+  box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5058823529);
+}
+.contentContainer .rightSide form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 70%;
+  height: 100%;
+  padding: 20px;
+}
+.contentContainer .rightSide form h6 {
+  color: #ffffff;
+  font-size: 24px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0px;
+  margin: 0 10px;
+}
+.contentContainer .rightSide form p {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 1;
+  margin: 10px 10px;
+}
+.contentContainer .rightSide form .inputBox {
+  width: 400px;
+  height: auto;
   box-sizing: border-box;
-  box-shadow: 0 2px 20px 0 #F1E9EA;
+  overflow: hidden;
+  position: relative;
+}
+.contentContainer .rightSide form .inputBox textarea {
+  color: #ffffff;
+  width: 70%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  box-sizing: border-box;
+  overflow: auto;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 20px;
+  background: #313131;
+  border: 3px solid #0E0E0E;
+  box-shadow: 0 0 10px 5px inset rgba(0, 0, 0, 0.5058823529);
+}
+.contentContainer .rightSide form .recommendCont {
+  display: flex;
+}
+.contentContainer .rightSide form .recommendCont p {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  margin: 10px 10px;
+}
+.contentContainer .rightSide form .recommendCont .radio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contentContainer .rightSide form .recommendCont .radio input {
+  display: none;
+}
+.contentContainer .rightSide form .recommendCont .radio input:checked + label.thumbsUp .colorUp {
+  fill: #00FF0A;
+  stroke: none;
+}
+.contentContainer .rightSide form .recommendCont .radio input:checked + label.thumbsDown .colorDown {
+  fill: #FF0000;
+  stroke: none;
+}
+.contentContainer .rightSide form .recommendCont .radio label {
+  cursor: pointer;
+}
+.contentContainer .rightSide form .recommendCont .radio label svg {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  width: 25px;
+  height: 30px;
+}
+.contentContainer .rightSide form .recommendCont .radio label .colorUp {
+  fill: none;
+  stroke: #00FF0A;
+  filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.5));
+}
+.contentContainer .rightSide form .recommendCont .radio label .colorDown {
+  fill: none;
+  stroke: #FF0000;
+  filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.5));
+}
+.contentContainer .rightSide form .submitBtn {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  margin-top: 20px;
+}
+.contentContainer .rightSide form .submitBtn button {
+  color: #ffffff;
+  font-size: 10px;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 10px;
+  background: #313131;
+  border-radius: 10px;
+  border: 2px solid #0E0E0E;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.75);
+  text-shadow: 10px 10px 10px rgb(0, 0, 0);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.contentContainer .rightSide form .submitBtn button:hover {
+  background: #C94558;
+  box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+.contentContainer .rightSide .postedReview {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 40px;
+}
+.contentContainer .rightSide .postedReview h4 {
+  color: #44E4E5;
+  font-size: 24px;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  letter-spacing: 0px;
+  margin-top: 20px;
+}
+.contentContainer .rightSide .postedReview h6 {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 1.5;
+  margin: 0 10px;
+}
+.contentContainer .rightSide .postedReview p {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 1;
+  margin: 10px 10px;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.25);
+  border: 3px solid #0E0E0E;
+  box-shadow: 0 0 10px 5px inset rgba(0, 0, 0, 0.5);
+}
+.contentContainer .rightSide .postedReview section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.contentContainer .rightSide .postedReview section .commentPost {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  margin: 20px;
+  border: 2px solid #858585;
+  box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);
+}
+.contentContainer .rightSide .postedReview section .commentPost .recommendProfile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 20%;
+}
+.contentContainer .rightSide .postedReview section .commentPost .recommendProfile img {
+  width: 50px;
+  margin: 10px;
+}
+.contentContainer .rightSide .postedReview section .commentPost .userComment {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 80%;
 }/*# sourceMappingURL=gp.css.map */
