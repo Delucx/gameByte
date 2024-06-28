@@ -7,7 +7,15 @@
     <title>login | gameByte</title>
     <link rel="icon" type="image/x-icon" href="Assets/gameByte_icon.png" />
     <link rel="stylesheet" href="CSS/Signup.css" />
-  </head>
+    <style>
+        .error {
+            color: red;
+        }
+        .success {
+            border-color: green;
+        }
+    </style>
+</head>
   <body>
     <section>
       <span></span>
@@ -271,7 +279,7 @@
       <span></span>
       <span></span>
 
-      <form class="signup" action="home.html" method="POST">
+      <form class="signup" action="home.html" method="POST" id="form">
         <div class="content">
             <img src="Assets/full logo.png" alt="gameByte logo" />
             <div class="form">
@@ -321,7 +329,7 @@
                     <div class="inputBox">
                         <input type="submit" value="Signup" />
                     </div>
-                    <div class="inputBox">
+                    <div class="inputBox1">
                         <button type="button" onclick="showPreviousPage()">Back</button>
                     </div>
                 </div>
@@ -329,22 +337,8 @@
         </div>
     </form>
     
-    
-    </section>
-    
-    <script src="/JavaScript/Style.js"></script>
+    <script src="/JavaScript/Regex.js"></script>
   </body>
+
+  
 </html>
-
-<script>
-    function showNextPage() {
-    document.getElementById('step-1').style.display = 'none';
-    document.getElementById('step-2').style.display = 'block';
-}
-
-function showPreviousPage() {
-    document.getElementById('step-1').style.display = 'block';
-    document.getElementById('step-2').style.display = 'none';
-}
-
-</script>
