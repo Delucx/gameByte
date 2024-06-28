@@ -8,25 +8,6 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class crudBase {
-    //private Connection connection;
-
-    //public crudBase() {
-      //  DatabaseConnection();
-  //  }
-
- //   public void DatabaseConnection() {
-  //      try {
-  //          connection = DatabaseConnection.initializeDatabase();
-   //         System.out.println("Connected");
-   //     } catch (ClassNotFoundException e) {
-    //      e.printStackTrace();
-    //        System.out.println("Driver Not Found");
-     //  } catch (SQLException e) {
-     //      e.printStackTrace();
-    //        System.out.println("Failed to connect to the database");
-    //    }
-   // }
-
 private Connection connection;
 
 public crudBase() {

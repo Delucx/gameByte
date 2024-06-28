@@ -2,9 +2,22 @@ CREATE TABLE gamebyte_user (
 	id INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1),
 	first_name VARCHAR(50) NOT NULL,
 	last_name VARCHAR(50) NOT NULL,
-	email VARCHAR(50) NOT NULL,
+	email VARCHAR(200) NOT NULL,
 	contact_number LONG NOT NULL,
 	username VARCHAR(50) NOT NULL
 );
 
-DELETE TA
+DELETE TABLE gamebyte_user;
+
+CREATE TABLE user_feedback (
+    id INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1),
+    username VARCHAR(50) NOT NULL,
+    comments VARCHAR(255) NOT NULL,
+    recommended BOOLEAN NOT NULL,
+    PRIMARY KEY (id)
+);
+
+INSERT INTO user_feedback (username, comments, recommended) VALUES ('user1', 'Great content!', TRUE);
+INSERT INTO user_feedback (username, comments, recommended) VALUES ('user2', 'Not helpful.', FALSE);
+
+SELECT * FROM user_feedback;

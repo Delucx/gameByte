@@ -22,7 +22,7 @@
         <ul>
             <li><a href="/home.html">home</a></li>
             <li><a href="#">community</a></li>
-            <li><a href="/login.jsp">login | sign up</a></li>
+            <li><a href="/login.jsp">Hello<img class="profilePic" src="Assets/Profile.png" alt="Profile" /></a></li>
         </ul>
     </nav>
 
@@ -86,6 +86,7 @@
                     <img src="Assets/Profile.png" alt="Profile" />
                 </div>
                 <form action="" method="">
+                    <input type="hidden" name="userName" value="<%= loggedInUser %>" />
                     <h6>Write a Review for Game</h6>
                     <p>
                         Please describe what you liked or disliked about this game and
@@ -128,8 +129,7 @@
                         <div class="userComment">
                             <h6>Username</h6>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                                malesuada, nunc nec lacinia.
+                                Lorem ipsum
                             </p>
                         </div>
                     </div>
