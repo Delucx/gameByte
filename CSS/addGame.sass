@@ -1,0 +1,90 @@
+.press-start-2p-regular 
+  font-family: "Press Start 2P", system-ui
+  font-weight: 400
+  font-style: normal
+
+.kosugi-maru-regular 
+  font-family: "Kosugi Maru", sans-serif
+  font-weight: 400
+  font-style: normal
+
+body
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 0
+    min-height: 100vh
+    background: #1e1e1e
+    overflow: hidden
+    cursor: none
+
+nav
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background: #1e1e1e
+    font-size: 20px
+    font-weight: 700
+    
+    section
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: row
+        margin-left: 100px
+
+        img
+            width: 50px
+            height: 50px
+            border-radius: 50%
+            margin-right: 10px
+
+        h3
+            color: #44E4E5
+            font-size: 30px
+            font-weight: 700
+            letter-spacing: 1px
+
+    ul  
+        display: flex
+        list-style: none
+        margin: 0
+        margin-right: 100px
+        padding: 0
+
+    li
+        list-style: none
+        margin: 0 20px
+        cursor: pointer
+        transition: all 0.3s ease-in-out
+        display: flex
+        align-items: center
+
+        .profilePic
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 50px
+            height: 50px
+            transition: all 0.3s ease-in-out
+
+        a
+            display: flex
+            align-items: center
+            text-decoration: none
+            color: #44E4E5
+            font-family: "Press Start 2P", system-ui
+            font-weight: 700
+            letter-spacing: 2px
+            transition: all 0.3s ease-in-out
+
+        a:hover
+            color: #C94558
+            transition: all 0.3s ease-in-out
+
+    li:hover
+        transform: scale(1.05)
+        transition: all 0.3s ease-in-out
+
+form
+

@@ -1,0 +1,105 @@
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kosugi-maru-regular {
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  min-height: 100vh;
+  background: #1e1e1e;
+  overflow: hidden;
+  cursor: none;
+}
+
+.cursor_trail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background: #0f0;
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0, 0 0 40px #0f0, 0 0 50px #0f0;
+  transform: translate(-50%, -50%);
+  opacity: 0.8;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e1e1e;
+  font-size: 20px;
+  font-weight: 700;
+}
+nav section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 100px;
+}
+nav section img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+nav section h3 {
+  color: #44E4E5;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  margin-right: 100px;
+  padding: 0;
+}
+nav li {
+  list-style: none;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+nav li .profilePic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  transition: all 0.3s ease-in-out;
+}
+nav li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #44E4E5;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 700;
+  letter-spacing: 2px;
+  transition: all 0.3s ease-in-out;
+}
+nav li a:hover {
+  color: #C94558;
+  transition: all 0.3s ease-in-out;
+}
+nav li:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}/*# sourceMappingURL=addGame.css.map */
