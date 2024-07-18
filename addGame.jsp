@@ -21,12 +21,11 @@
         </section>
         <ul>
             <li><a href="/home.html">home</a></li>
-            <li><a href="#">community</a></li>
             <li><a href="/login.jsp">Hello<img class="profilePic" src="Assets/Profile.png" alt="Profile" /></a></li>
         </ul>
-    </nav>
+    </nav> 
 
-    <form action="AddGame" method="post" enctype="multipart/form-data">
+    <!-- <form action="AddGame" method="post" enctype="multipart/form-data">
         <label for="title">Title:</label><br>
         <input type="text" id="title" name="title" required><br><br>
         
@@ -43,6 +42,40 @@
         <input type="file" id="background" name="background" accept="image/*" required><br><br>
         
         <input type="submit" value="Submit">
+    </form> -->
+
+    <div class="titleProject">
+        <h4>Add New Game</h4>
+    </div>
+
+    <form action="" method="" enctype="">
+        <div class="column1">
+            <div>
+                <label for="title">Game Name:</label><br>
+                <input type="text" id="title" name="title" class="gameName" required><br><br>
+            </div>
+        
+            <div>
+                <label for="creator">Game Developer:</label><br>
+                <input type="text" id="creator" name="creator" class="gameDev" required><br><br>
+            </div>
+            
+            <div>
+                <label for="description">Game Description:</label><br>
+                <textarea id="description" name="description" rows="5" class="gameDesc" required></textarea><br><br>
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </div>
+
+        <div class="column2">
+            <label for="logo">Game Logo:</label><br>
+            <input type="file" id="logo" name="logo" accept="image/*" class="gameLogo" required><br><br>
+            
+            <label for="background">Game Banner:</label><br>
+            <input type="file" id="background" name="background" accept="image/*" class="gameBanner" required><br><br>
+        </div>
     </form>
     
     <script src="" async defer></script>
